@@ -1,0 +1,19 @@
+{
+    "name": "Youtube Sleep Injection",
+    "version": "1.0",
+    "description": "Injects scripts for the custom sleep timer",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.youtube.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "manifest_version": 3
+}
